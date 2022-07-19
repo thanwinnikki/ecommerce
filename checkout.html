@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Products | Nikki's Store</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+  />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <img src="images/nikki_logo.webp" width="125px" />
+        </div>
+        <nav>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./products.html">Products</a></li>
+            <li><a href="">About</a></li>
+          </ul>
+        </nav>
+        <img src="images/cart.png" width="30px" height="30px" />
+      </div>
+    </div>
+    <!-- /container -->
+
+    <!--Check out page-->
+    <div class="progress_container">
+        <div class="step_container">
+            <div class="step">
+                <span class="step-title">Payment Details</span>
+            </div>
+        </div>
+        <div class="step_container">
+            <div class="step">
+                <span class="step-title">Shipping Details</span>
+            </div>
+        </div>
+        <div class="step_container">
+            <div class="step">
+                <span class="step-title">Confirmation</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-container">
+        <h2> Payment Details</h2>
+        <form class="checkout-form">
+            <div class="input-line">
+                <label for="name">Name On Card</label>
+                <input type="text" name="name" id="name" placeholder="John AppleSeed">
+            </div>
+            <div class="input-line">
+                <label for="card">Card Number</label>
+                <input type="text" name="card" id="card" placeholder="1111 2222 3333 4444">
+            </div>
+            <div class="input-container">
+                <div class="input-line">
+                    <label for="date">Card Expiring On</label>
+                    <input type="text" name="date" id="date" placeholder="MM-YY">
+                </div>
+                <div class="input-line">
+                    <label for="cvc">CVC</label>
+                    <input type="text" name="cvc" id="cvc" placeholder="***">
+                </div>
+            </div>
+        </form>
+    </div>
+    <input type="button" value="Confirm Details">
+  </body>
+</html>
