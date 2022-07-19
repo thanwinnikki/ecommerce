@@ -3,7 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: 'Kanit', sans-serif;
 }
 .navbar{
@@ -152,7 +153,7 @@ select:focus {
     color: white;
 }
 
-/** products.html page **/
+/** product_details.html page **/
 .single-product{
     margin-top: 80px;
 }
@@ -198,7 +199,7 @@ input:focus {
     cursor: pointer;
 }
 
-/** Cart **/
+/** shoppingcart.html page **/
 
 .cart-page{
     margin: 30px auto;
@@ -259,6 +260,8 @@ th:last-child{
     text-align: right;
 }
 
+/** checkout.html page **/
+
 .progress_container{
     display: flex;
     justify-content: space-between;
@@ -272,3 +275,42 @@ th:last-child{
     align-items: center;
     flex-direction: column;
 }
+
+.step {
+    background-color: coral;
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.progress_container:nth-of-type(3) .step::after{
+    display: none;
+}
+
+.progress_container:nth-of-type(3) .step::after{
+    background-color: white;
+    border: 2px solid grey;
+}
+
+.progress_container:nth-of-type(2) .step::after{
+    background-color: grey;
+}
+</div>
+.progress_container:nth-of-type(2) .step::after{
+    background-color: white;
+    border: 2px solid rgb(0, 132, 255);
+}
+
+.step::after {
+    content: "";
+    width: 15vw;
+    height: 2px;
+    background-color: inherit;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(100%) translateY(-50%);
+}
+
