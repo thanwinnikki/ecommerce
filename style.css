@@ -262,6 +262,17 @@ th:last-child{
 
 /** checkout.html page **/
 
+.checkout_body{
+    height: 450px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20%;
+    margin: 30px auto;
+}
+
 .progress_container{
     display: flex;
     justify-content: space-between;
@@ -283,34 +294,97 @@ th:last-child{
     border-radius: 30px;
     margin-bottom: 1rem;
     position: relative;
+    padding: 0%;
 }
 
-.progress_container:nth-of-type(3) .step::after{
+.step_container:nth-of-type(3) .step::after{
     display: none;
 }
 
-.progress_container:nth-of-type(3) .step::after{
+.step_container:nth-of-type(3) .step{
+    background-image: none;
     background-color: white;
     border: 2px solid grey;
 }
 
-.progress_container:nth-of-type(2) .step::after{
+.step_container:nth-of-type(2) .step::after{
     background-color: grey;
 }
-</div>
-.progress_container:nth-of-type(2) .step::after{
+
+.step_container:nth-of-type(2) .step{
+    background-image: none;
     background-color: white;
     border: 2px solid rgb(0, 132, 255);
 }
 
 .step::after {
     content: "";
-    width: 15vw;
+    width: 17vw;
     height: 2px;
     background-color: inherit;
     position: absolute;
     top: 50%;
-    right: 0;
+    right: 0px;
     transform: translate(100%) translateY(-50%);
+}
+
+.form-container{
+    width: 60%;
+    margin-top: 6rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+
+.checkout-form{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input-line{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+label{
+    font-size: 16px;
+    color: grey;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"]{
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    background-color: coral;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    color: black;
+}
+
+input[type="text"]::placeholder{
+    font-size: 14px;
+    color: black;
+}
+
+.input-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.input-container .input-line{
+    width: 48%;
 }
 
