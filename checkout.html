@@ -88,8 +88,22 @@
             </div>
           </div>
         </form>
+        <div class="button" onclick="consoleLog(event)">Submit</div>
       </div>
-      <div class="button">Submit</div>
     </div>
   </body>
+  <script>
+    function consoleLog(event){
+      event.preventDefault();
+      var name = document.getElementById("name");
+      var card = document.getElementById("card");
+      var date = document.getElementById("date");
+      var cvc = document.getElementById("cvc");
+
+      console.log("Card Name is : " + name.value);
+      console.log("Card Number is : " + card.value);
+      console.log("Card Expiry is : " + date.value);
+      console.log("Card CVC is : " + cvc.value);
+    }
+  </script>
 </html>
