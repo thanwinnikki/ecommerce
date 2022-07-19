@@ -186,3 +186,13 @@ select:focus {
 input:focus {
     outline: none;
 }
+
+.small-image-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-image-col {
+    flex-basis: 22%;
+    cursor: pointer;
+}
