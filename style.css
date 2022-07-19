@@ -116,7 +116,7 @@ h4{
     font-size: 14px;
 }
 
-.col-3:hover{
+.col-3:hover {
     transform: translateY(-5px);
 }
 /** products.html page **/
@@ -128,4 +128,25 @@ h4{
 select {
     border: 1px solid #ff523b;
     padding: 5px;
+}
+select:focus {
+    outline: none;
+}
+.page-button{
+    margin: 0 auto 80px;
+    transition: transform 0.5s;
+}
+.page-button span{
+    display: inline-block;
+    border: 1px solid #ff523b;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+.page-button span:hover {
+    background: #ff523b;
+    color: white;
 }
